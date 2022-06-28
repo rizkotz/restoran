@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:restoran/home/home_view.dart';
+import 'package:restoran/login_view.dart';
 
 class SplashScreenPage extends StatefulWidget {
   const SplashScreenPage({Key? key}) : super(key: key);
@@ -20,9 +21,10 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
     //bisa diganti beberapa detik sesuai keinginan
     var durasiSplash = const Duration(seconds: 2);
     return Timer(durasiSplash, () {
-      //pindah ke halaman home
+      //pindah ke halaman login
       Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) {
-        return HomePage();
+        //return HomePage();
+        return LoginPage();
       }));
     });
   }
