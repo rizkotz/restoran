@@ -51,11 +51,6 @@ class HomePage extends StatelessWidget {
                     left: 30,
                     top: 30,
                   ),
-                  child: Row(
-                    children: [
-                      ////
-                    ],
-                  ),
                 ),
               )
             ],
