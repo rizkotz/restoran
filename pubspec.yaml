@@ -62,8 +62,7 @@ flutter:
     - assets/images/accent.png
     - assets/images/login.png
     - assets/images/logo_splash.png
-    #- assets/images/splash.png
-
+    - assets/images/splash.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
@@ -75,7 +74,7 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-    fonts:
+      fonts:
     - family: Lato
       fonts:
         - asset: assets/fonts/Lato-Regular.ttf
@@ -98,3 +97,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
