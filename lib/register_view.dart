@@ -32,7 +32,7 @@ class _RegisterPageState extends State<RegisterPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'APP Flutter\nRegister',
+                  'DAFTAR MEMBER',
                   style: heading2.copyWith(color: textBlack),
                 ),
                 SizedBox(
