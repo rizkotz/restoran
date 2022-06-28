@@ -125,6 +125,11 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ],
               ),
+              CustomPrimaryButton(
+                buttonColor: primaryBlue,
+                textValue: 'Login',
+                textColor: Colors.white,
+              ),
               SizedBox(
                 height: 24,
               ),

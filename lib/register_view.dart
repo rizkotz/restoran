@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:restoran/login_view.dart';
 import 'package:restoran/theme.dart';
 import 'package:restoran/widgets/custom_checkbox.dart';
 import 'package:restoran/widgets/primary_button.dart';
@@ -144,6 +145,21 @@ class _RegisterPageState extends State<RegisterPage> {
             ),
             SizedBox(
               height: 32,
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => LoginPage()));
+                  },
+                  child: Text(
+                    'REGISTER',
+                    style: regular16pt.copyWith(color: primaryBlue),
+                  ),
+                ),
+              ],
             ),
             CustomPrimaryButton(
               buttonColor: primaryBlue,
