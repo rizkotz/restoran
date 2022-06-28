@@ -118,10 +118,9 @@ class _LoginPageState extends State<LoginPage> {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) => HomePage()));
                     },
-                    child: CustomPrimaryButton(
-                      buttonColor: primaryBlue,
-                      textValue: 'Login',
-                      textColor: Colors.white,
+                    child: Text(
+                      'LOGIN',
+                      style: regular16pt.copyWith(color: primaryBlue),
                     ),
                   ),
                 ],
