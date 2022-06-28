@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:restoran/home/home_view.dart';
 import 'package:restoran/register_view.dart';
 import 'package:restoran/theme.dart';
 import 'package:restoran/widgets/custom_checkbox.dart';
@@ -33,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'APP Flutter\nLogin',
+                    'MEMBER RESTAURANT\nLOGIN',
                     style: heading2.copyWith(color: textBlack),
                   ),
                   SizedBox(
@@ -109,10 +110,21 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(
                 height: 32,
               ),
-              CustomPrimaryButton(
-                buttonColor: primaryBlue,
-                textValue: 'Login',
-                textColor: Colors.white,
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => HomePage()));
+                    },
+                    child: CustomPrimaryButton(
+                      buttonColor: primaryBlue,
+                      textValue: 'Login',
+                      textColor: Colors.white,
+                    ),
+                  ),
+                ],
               ),
               SizedBox(
                 height: 24,
@@ -138,7 +150,7 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'Belum punya akun? ',
+                    'Belum punya akun Member? ',
                     style: regular16pt.copyWith(color: textGrey),
                   ),
                   GestureDetector(
