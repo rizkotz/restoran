@@ -1,16 +1,23 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('App Fluterku'),
-      ),
-      body: Center(
-        child: Text('Home Page'),
+      appBar: buildAppBar(),
+      backgroundColor: Colors.white10,
+      body: ListBody(),
+    );
+  }
+
+  AppBar buildAppBar() {
+    return AppBar(
+      elevation: 0,
+      leading: IconButton(
+        onPressed: () {},
+        icon: Icon(Icons.drag_handle),
       ),
     );
   }
 }
+
