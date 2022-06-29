@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  Widget _selectedExtras(@required String name) {
+  Widget _selectedExtras(@required String images, @required String name) {
     return Container(
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.0),
@@ -100,7 +100,7 @@ class HomePage extends StatelessWidget {
         elevation: 0.0,
         backgroundColor: Theme.of(context).accentColor,
         title: Text(
-          "Cleaning Plan",
+          "Home Page",
           style: TextStyle(
             fontSize: 23,
           ),
@@ -123,7 +123,7 @@ class HomePage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 30, left: 30),
                 child: Text(
-                  "Selected Cleaning",
+                  "Selected Promo",
                   style: TextStyle(
                     fontSize: 19,
                     color: Colors.black87,
@@ -142,13 +142,13 @@ class HomePage extends StatelessWidget {
                     children: [
                       _selectedCleaning(
                         color: Theme.of(context).accentColor,
-                        subtittle: "Call of Today",
-                        tittle: 'Home Cleaning',
+                        subtittle: "Rp.21000",
+                        tittle: 'Ayam Bakar + Es Teh',
                       ),
                       _selectedCleaning(
                         color: Theme.of(context).accentColor,
-                        subtittle: "Call of Tomorrow",
-                        tittle: 'Office  Cleaning',
+                        subtittle: "Rp.25000",
+                        tittle: 'Nasgor + Es Teler',
                       )
                     ],
                   ),
@@ -163,7 +163,7 @@ class HomePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Selected Extas',
+                      'Select Menu',
                       style: TextStyle(fontSize: 20, color: Colors.black),
                     ),
                     Padding(
@@ -176,7 +176,7 @@ class HomePage extends StatelessWidget {
                           mainAxisSpacing: 8,
                           childAspectRatio: 1.30,
                           children: [
-                            //_selectedExtras(),
+                            // _selectedExtras(),
                             //_selectedExtras(),
                             //_selectedExtras(),
                             //_selectedExtras(),
@@ -195,7 +195,7 @@ class HomePage extends StatelessWidget {
                   children: [
                     Padding(
                       padding: EdgeInsets.only(left: 13),
-                      child: Text("Selected Frequensi",
+                      child: Text("Promo Special Day!!",
                           style: TextStyle(
                             fontSize: 20,
                             color: Colors.black,
@@ -210,7 +210,7 @@ class HomePage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           _selectedFrequency(
-                            tittle: 'Weekly',
+                            tittle: 'Senin',
                             color: Colors.white,
                             border: Border.all(
                                 color: Theme.of(context).accentColor),
@@ -218,20 +218,20 @@ class HomePage extends StatelessWidget {
                                 TextStyle(color: Theme.of(context).accentColor),
                           ),
                           _selectedFrequency(
-                            tittle: 'BI-Weakly',
+                            tittle: 'Slasa',
                             color: Colors.white,
                             border: Border.all(color: Colors.grey),
                             textStyle: TextStyle(color: Colors.black),
                           ),
                           _selectedFrequency(
-                            tittle: 'Monthly',
+                            tittle: 'Rabu',
                             color: Colors.white,
                             border: Border.all(color: Colors.grey),
                             textStyle: TextStyle(color: Colors.black),
                           ),
                           _selectedFrequency(
-                            tittle: 'Yearly',
-                            color: Colors.white38,
+                            tittle: 'Kamis',
+                            color: Colors.white,
                             border: Border.all(color: Colors.grey),
                             textStyle: TextStyle(color: Colors.black),
                           ),
