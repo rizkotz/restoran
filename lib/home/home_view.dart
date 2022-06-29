@@ -237,6 +237,36 @@ class HomePage extends StatelessWidget {
                           ),
                         ],
                       ),
+                    ),
+                    container(
+                      height: 50,
+                      width: double.infinity,
+                      padding: EdgeInsert.only(left: 5, right: 25),
+                      margin: EdgeInsert.symmetric(horizontal: 20),
+                      child: RaisedButton(
+                        color: Theme.of(contex).accentColor,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10,0),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment,spaceBetween,
+                          children: [
+                            Padding(
+                              padding: EdgeInsert.only(
+                                left:20,
+                              )
+                              child: Text(
+                                "Done", 
+                                style: TexStyle(
+                                  fontsize: 19,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        onProssed: (0{}))
                     )
                   ],
                 ),
