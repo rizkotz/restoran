@@ -36,7 +36,7 @@ class _MenuPageState extends State<MenuPage> {
           child: ListView(
             children: <Widget>[
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 //ROW 1
                 children: [
                   Container(
@@ -94,7 +94,7 @@ class _MenuPageState extends State<MenuPage> {
               ),
               Row(
                 //ROW 2
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
                 children: [
                   Container(
@@ -152,7 +152,7 @@ class _MenuPageState extends State<MenuPage> {
               ),
               Row(
                 //ROW 4
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
                 children: [
                   Container(
@@ -210,7 +210,7 @@ class _MenuPageState extends State<MenuPage> {
               ),
               Row(
                   // ROW 3
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
                       child: Column(
@@ -267,7 +267,7 @@ class _MenuPageState extends State<MenuPage> {
                   ]),
               Row(
                   // ROW 3
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
                       child: Column(

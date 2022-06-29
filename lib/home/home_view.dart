@@ -1,6 +1,7 @@
 // ignore_for_file: deprecated_member_use, unused_element, non_constant_identifier_names
 
 import 'package:flutter/material.dart';
+import 'package:restoran/menu_view.dart';
 
 class HomePage extends StatelessWidget {
   Widget _selectedCleaning({
@@ -173,27 +174,41 @@ class HomePage extends StatelessWidget {
                           left: 30,
                           top: 30,
                         ),
-                        child: Row(
-                          children: [
-                            Image(
-                              image: AssetImage("assets/images/makanan.jpeg"),
-                              height: 200,
-                              width: 200,
+                        child: Expanded(
+                          child: InkWell(
+                            highlightColor: Colors.transparent,
+                            splashColor: Colors.transparent,
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const MenuPage()));
+                            },
+                            child: Row(
+                              children: [
+                                Image(
+                                  image:
+                                      AssetImage("assets/images/food_icon.png"),
+                                  height: 200,
+                                  width: 200,
+                                ),
+                                SizedBox(height: 10),
+                                Text(
+                                  "                  ",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Image(
+                                  image:
+                                      AssetImage("assets/images/taco_icon.jpg"),
+                                  height: 200,
+                                  width: 200,
+                                ),
+                                SizedBox(height: 10),
+                              ],
                             ),
-                            SizedBox(height: 10),
-                            Text(
-                              "                  ",
-                              style: TextStyle(
-                                  fontSize: 14, fontWeight: FontWeight.bold),
-                            ),
-                            Image(
-                              image: AssetImage(
-                                  "assets/images/beverages_icon.png"),
-                              height: 200,
-                              width: 200,
-                            ),
-                            SizedBox(height: 10),
-                          ],
+                          ),
                         ),
                       ),
                     ),
@@ -207,7 +222,8 @@ class HomePage extends StatelessWidget {
                         child: Row(
                           children: [
                             Image(
-                              image: AssetImage("assets/images/snack_icon.png"),
+                              image: AssetImage(
+                                  "assets/images/beverages_icon.png"),
                               height: 200,
                               width: 200,
                             ),
@@ -218,7 +234,7 @@ class HomePage extends StatelessWidget {
                                   fontSize: 14, fontWeight: FontWeight.bold),
                             ),
                             Image(
-                              image: AssetImage("assets/images/taco_icon.jpg"),
+                              image: AssetImage("assets/images/snack_icon.png"),
                               height: 200,
                               width: 200,
                             ),
