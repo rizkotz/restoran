@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class MenuPage extends StatefulWidget {
-  const MenuPage({Key? key}) : super(key: key);
+class Menu2Page extends StatefulWidget {
+  const Menu2Page({Key? key}) : super(key: key);
   @override
-  _MenuPageState createState() => _MenuPageState();
+  _Menu2PageState createState() => _Menu2PageState();
 }
 
-class _MenuPageState extends State<MenuPage> {
+class _Menu2PageState extends State<Menu2Page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +42,7 @@ class _MenuPageState extends State<MenuPage> {
                   bottom: 30,
                 ),
                 child: Text(
-                  "Menu Makanan:",
+                  "Menu Minuman:",
                   style: TextStyle(
                     fontSize: 19,
                     color: Colors.black87,
@@ -58,13 +58,13 @@ class _MenuPageState extends State<MenuPage> {
                     child: Column(
                       children: const [
                         Image(
-                          image: AssetImage("assets/images/ayam_bakar.jpg"),
+                          image: AssetImage("assets/images/es_teh.jpg"),
                           height: 100,
                           width: 100,
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Ayam Bakar\nRp15000",
+                          "Ice Tea\nRp8000",
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),
@@ -75,13 +75,13 @@ class _MenuPageState extends State<MenuPage> {
                     child: Column(
                       children: const [
                         Image(
-                          image: AssetImage("assets/images/ayam_goreng.jpg"),
+                          image: AssetImage("assets/images/es_jeruk.jpg"),
                           height: 100,
                           width: 100,
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Ayam Goreng\nRp14500",
+                          "Orange Juice\nRp10000",
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),
@@ -92,13 +92,13 @@ class _MenuPageState extends State<MenuPage> {
                     child: Column(
                       children: const [
                         Image(
-                          image: AssetImage("assets/images/cumi_bakar.jpg"),
+                          image: AssetImage("assets/images/blue_ocean.png"),
                           height: 100,
                           width: 100,
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Cumi Bakar\nRp20000",
+                          "Blue Ocean\nRp20000",
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),
@@ -116,13 +116,13 @@ class _MenuPageState extends State<MenuPage> {
                     child: Column(
                       children: const [
                         Image(
-                          image: AssetImage("assets/images/mie_ayam.jpg"),
+                          image: AssetImage("assets/images/coffee_latte.jpg"),
                           height: 100,
                           width: 100,
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Mie Ayam\nRp13500",
+                          "Coffe Latte\nRp23500",
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),
@@ -133,13 +133,13 @@ class _MenuPageState extends State<MenuPage> {
                     child: Column(
                       children: const [
                         Image(
-                          image: AssetImage("assets/images/nasgor.jpg"),
+                          image: AssetImage("assets/images/es_capucino.jpg"),
                           height: 100,
                           width: 100,
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Nasi Goreng\nRp19000",
+                          "Ice Capuccino\nRp25000",
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),
@@ -150,13 +150,13 @@ class _MenuPageState extends State<MenuPage> {
                     child: Column(
                       children: const [
                         Image(
-                          image: AssetImage("assets/images/rawon.jpg"),
+                          image: AssetImage("assets/images/es_coklat.jpg"),
                           height: 100,
                           width: 100,
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Rawon\nRp25000",
+                          "Ice Chocolate\nRp21000",
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),
@@ -174,13 +174,13 @@ class _MenuPageState extends State<MenuPage> {
                     child: Column(
                       children: const [
                         Image(
-                          image: AssetImage("assets/images/sate.jpg"),
+                          image: AssetImage("assets/images/es_matcha.jpg"),
                           height: 100,
                           width: 100,
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Sate Kambing\nRp20000",
+                          "Ice Matcha\nRp27000",
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),
@@ -191,13 +191,13 @@ class _MenuPageState extends State<MenuPage> {
                     child: Column(
                       children: const [
                         Image(
-                          image: AssetImage("assets/images/soto.jpg"),
+                          image: AssetImage("assets/images/frapucino.jpg"),
                           height: 100,
                           width: 100,
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Soto Daging\nRp25000",
+                          "Frapuccino\nRp30000",
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),
@@ -208,13 +208,13 @@ class _MenuPageState extends State<MenuPage> {
                     child: Column(
                       children: const [
                         Image(
-                          image: AssetImage("assets/images/steak.jpg"),
+                          image: AssetImage("assets/images/hot_milk.jpg"),
                           height: 100,
                           width: 100,
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Steak Sapi\nRp40000",
+                          "Hot Milk\nRp17000",
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),
@@ -231,14 +231,13 @@ class _MenuPageState extends State<MenuPage> {
                       child: Column(
                         children: const [
                           Image(
-                            image:
-                                AssetImage("assets/images/nasgor special.jpg"),
+                            image: AssetImage("assets/images/matcha_latte.jpg"),
                             height: 100,
                             width: 100,
                           ),
                           SizedBox(height: 10),
                           Text(
-                            "Nasgor Special\nRp30000",
+                            "Matcha Latte\nRp24000",
                             style: TextStyle(
                                 fontSize: 14, fontWeight: FontWeight.bold),
                           ),
@@ -249,13 +248,13 @@ class _MenuPageState extends State<MenuPage> {
                       child: Column(
                         children: const [
                           Image(
-                            image: AssetImage("assets/images/sup_iga.jpeg"),
+                            image: AssetImage("assets/images/mocktail.jpg"),
                             height: 100,
                             width: 100,
                           ),
                           SizedBox(height: 10),
                           Text(
-                            "Sup Iga\nRp40000",
+                            "Mocktail\nRp30000",
                             style: TextStyle(
                                 fontSize: 14, fontWeight: FontWeight.bold),
                           ),
@@ -266,13 +265,13 @@ class _MenuPageState extends State<MenuPage> {
                       child: Column(
                         children: const [
                           Image(
-                            image: AssetImage("assets/images/kwetiau.jpg"),
+                            image: AssetImage("assets/images/mojito.jpe"),
                             height: 100,
                             width: 100,
                           ),
                           SizedBox(height: 10),
                           Text(
-                            "Kwetiau\nRp25000",
+                            "Mojito\nRp35000",
                             style: TextStyle(
                                 fontSize: 14, fontWeight: FontWeight.bold),
                           ),
@@ -288,13 +287,13 @@ class _MenuPageState extends State<MenuPage> {
                       child: Column(
                         children: const [
                           Image(
-                            image: AssetImage("assets/images/ayam_goreng.jpg"),
+                            image: AssetImage("assets/images/afogato.jpg"),
                             height: 100,
                             width: 100,
                           ),
                           SizedBox(height: 10),
                           Text(
-                            "Ayam Crispy\nRp20000",
+                            "Afogato\nRp39000",
                             style: TextStyle(
                                 fontSize: 14, fontWeight: FontWeight.bold),
                           ),
@@ -305,13 +304,13 @@ class _MenuPageState extends State<MenuPage> {
                       child: Column(
                         children: const [
                           Image(
-                            image: AssetImage("assets/images/sup_iga.jpeg"),
+                            image: AssetImage("assets/images/hot_coffe.jpg"),
                             height: 100,
                             width: 100,
                           ),
                           SizedBox(height: 10),
                           Text(
-                            "Iga Bakar\nRp45000",
+                            "Hot Coffee\nRp19000",
                             style: TextStyle(
                                 fontSize: 14, fontWeight: FontWeight.bold),
                           ),
@@ -322,13 +321,13 @@ class _MenuPageState extends State<MenuPage> {
                       child: Column(
                         children: const [
                           Image(
-                            image: AssetImage("assets/images/cumi_bakar.jpg"),
+                            image: AssetImage("assets/images/americano.jpg"),
                             height: 100,
                             width: 100,
                           ),
                           SizedBox(height: 10),
                           Text(
-                            "Pentol Bakar\nRp15000",
+                            "Ice Americano\nRp20000",
                             style: TextStyle(
                                 fontSize: 14, fontWeight: FontWeight.bold),
                           ),
