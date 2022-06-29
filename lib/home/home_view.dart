@@ -231,7 +231,7 @@ class HomePage extends StatelessWidget {
                           ),
                           _selectedFrequency(
                             tittle: 'Yearly',
-                            color: Colors.white,
+                            color: Colors.white38,
                             border: Border.all(color: Colors.grey),
                             textStyle: TextStyle(color: Colors.black),
                           ),
