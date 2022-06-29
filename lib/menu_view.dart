@@ -40,24 +40,54 @@ class _MenuPageState extends State<MenuPage> {
                 //ROW 1
                 children: [
                   Container(
-                    color: Colors.orange,
-                    margin: EdgeInsets.all(25.0),
-                    child: FlutterLogo(
-                      size: 60.0,
+                    child: Column(
+                      children: const [
+                        Image(
+                          image: AssetImage("assets/images/ayam_bakar.jpg"),
+                          height: 100,
+                          width: 100,
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                          "Ayam Bakar\nRp15000",
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
                   ),
                   Container(
-                    color: Colors.blue,
-                    margin: EdgeInsets.all(25.0),
-                    child: FlutterLogo(
-                      size: 60.0,
+                    child: Column(
+                      children: const [
+                        Image(
+                          image: AssetImage("assets/images/ayam_goreng.jpg"),
+                          height: 100,
+                          width: 100,
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                          "Ayam Goreng\nRp14500",
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
                   ),
                   Container(
-                    color: Colors.purple,
-                    margin: EdgeInsets.all(25.0),
-                    child: FlutterLogo(
-                      size: 60.0,
+                    child: Column(
+                      children: const [
+                        Image(
+                          image: AssetImage("assets/images/cumi_bakar.jpg"),
+                          height: 100,
+                          width: 100,
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                          "Cumi Bakar\nRp20000",
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
                   ),
                 ],
@@ -71,13 +101,13 @@ class _MenuPageState extends State<MenuPage> {
                     child: Column(
                       children: const [
                         Image(
-                          image: AssetImage("assets/images/ayam-bakar.png"),
+                          image: AssetImage("assets/images/mie_ayam.jpg"),
                           height: 100,
                           width: 100,
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Ayam Bakar",
+                          "Mie Ayam\nRp13500",
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),
@@ -85,17 +115,37 @@ class _MenuPageState extends State<MenuPage> {
                     ),
                   ),
                   Container(
-                    color: Colors.blue,
-                    margin: EdgeInsets.all(25.0),
-                    child: FlutterLogo(
-                      size: 60.0,
+                    child: Column(
+                      children: const [
+                        Image(
+                          image: AssetImage("assets/images/nasgor.jpg"),
+                          height: 100,
+                          width: 100,
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                          "Nasi Goreng\nRp19000",
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
                   ),
                   Container(
-                    color: Colors.purple,
-                    margin: EdgeInsets.all(25.0),
-                    child: FlutterLogo(
-                      size: 60.0,
+                    child: Column(
+                      children: const [
+                        Image(
+                          image: AssetImage("assets/images/rawon.jpg"),
+                          height: 100,
+                          width: 100,
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                          "Rawon\nRp25000",
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
                   ),
                 ],
@@ -106,24 +156,54 @@ class _MenuPageState extends State<MenuPage> {
 
                 children: [
                   Container(
-                    color: Colors.orange,
-                    margin: EdgeInsets.all(25.0),
-                    child: FlutterLogo(
-                      size: 60.0,
+                    child: Column(
+                      children: const [
+                        Image(
+                          image: AssetImage("assets/images/sate.jpg"),
+                          height: 100,
+                          width: 100,
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                          "Sate Kambing\nRp20000",
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
                   ),
                   Container(
-                    color: Colors.blue,
-                    margin: EdgeInsets.all(25.0),
-                    child: FlutterLogo(
-                      size: 60.0,
+                    child: Column(
+                      children: const [
+                        Image(
+                          image: AssetImage("assets/images/soto.jpg"),
+                          height: 100,
+                          width: 100,
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                          "Soto Daging\nRp25000",
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
                   ),
                   Container(
-                    color: Colors.purple,
-                    margin: EdgeInsets.all(25.0),
-                    child: FlutterLogo(
-                      size: 60.0,
+                    child: Column(
+                      children: const [
+                        Image(
+                          image: AssetImage("assets/images/steak.jpg"),
+                          height: 100,
+                          width: 100,
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                          "Steak Sapi\nRp40000",
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
                   ),
                 ],
@@ -133,24 +213,55 @@ class _MenuPageState extends State<MenuPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      color: Colors.orange,
-                      margin: EdgeInsets.all(25.0),
-                      child: FlutterLogo(
-                        size: 60.0,
+                      child: Column(
+                        children: const [
+                          Image(
+                            image:
+                                AssetImage("assets/images/nasgor special.jpg"),
+                            height: 100,
+                            width: 100,
+                          ),
+                          SizedBox(height: 10),
+                          Text(
+                            "Nasgor Special\nRp30000",
+                            style: TextStyle(
+                                fontSize: 14, fontWeight: FontWeight.bold),
+                          ),
+                        ],
                       ),
                     ),
                     Container(
-                      color: Colors.blue,
-                      margin: EdgeInsets.all(25.0),
-                      child: FlutterLogo(
-                        size: 60.0,
+                      child: Column(
+                        children: const [
+                          Image(
+                            image: AssetImage("assets/images/sup_iga.jpeg"),
+                            height: 100,
+                            width: 100,
+                          ),
+                          SizedBox(height: 10),
+                          Text(
+                            "Sup Iga\nRp40000",
+                            style: TextStyle(
+                                fontSize: 14, fontWeight: FontWeight.bold),
+                          ),
+                        ],
                       ),
                     ),
                     Container(
-                      color: Colors.purple,
-                      margin: EdgeInsets.all(25.0),
-                      child: FlutterLogo(
-                        size: 60.0,
+                      child: Column(
+                        children: const [
+                          Image(
+                            image: AssetImage("assets/images/kwetiau.jpg"),
+                            height: 100,
+                            width: 100,
+                          ),
+                          SizedBox(height: 10),
+                          Text(
+                            "Kwetiau\nRp25000",
+                            style: TextStyle(
+                                fontSize: 14, fontWeight: FontWeight.bold),
+                          ),
+                        ],
                       ),
                     ),
                   ]),
@@ -159,24 +270,54 @@ class _MenuPageState extends State<MenuPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      color: Colors.orange,
-                      margin: EdgeInsets.all(25.0),
-                      child: FlutterLogo(
-                        size: 60.0,
+                      child: Column(
+                        children: const [
+                          Image(
+                            image: AssetImage("assets/images/ayam_goreng.jpg"),
+                            height: 100,
+                            width: 100,
+                          ),
+                          SizedBox(height: 10),
+                          Text(
+                            "Ayam Crispy\nRp20000",
+                            style: TextStyle(
+                                fontSize: 14, fontWeight: FontWeight.bold),
+                          ),
+                        ],
                       ),
                     ),
                     Container(
-                      color: Colors.grey,
-                      margin: EdgeInsets.all(25.0),
-                      child: FlutterLogo(
-                        size: 60.0,
+                      child: Column(
+                        children: const [
+                          Image(
+                            image: AssetImage("assets/images/sup_iga.jpeg"),
+                            height: 100,
+                            width: 100,
+                          ),
+                          SizedBox(height: 10),
+                          Text(
+                            "Iga Bakar\nRp45000",
+                            style: TextStyle(
+                                fontSize: 14, fontWeight: FontWeight.bold),
+                          ),
+                        ],
                       ),
                     ),
                     Container(
-                      color: Colors.red,
-                      margin: EdgeInsets.all(25.0),
-                      child: FlutterLogo(
-                        size: 60.0,
+                      child: Column(
+                        children: const [
+                          Image(
+                            image: AssetImage("assets/images/cumi_bakar.jpg"),
+                            height: 100,
+                            width: 100,
+                          ),
+                          SizedBox(height: 10),
+                          Text(
+                            "Pentol Bakar\nRp15000",
+                            style: TextStyle(
+                                fontSize: 14, fontWeight: FontWeight.bold),
+                          ),
+                        ],
                       ),
                     ),
                   ]),
