@@ -117,21 +117,6 @@ class _LoginPageState extends State<LoginPage> {
                   GestureDetector(
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => MenuPage()));
-                    },
-                    child: Text(
-                      'Menu',
-                      style: regular16pt.copyWith(color: primaryBlue),
-                    ),
-                  ),
-                ],
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => HomePage()));
                     },
                     child: Text(
