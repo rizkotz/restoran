@@ -176,7 +176,7 @@ class HomePage extends StatelessWidget {
                         child: Row(
                           children: [
                             Image(
-                              image: AssetImage("assets/imagess/makanan.jpeg"),
+                              image: AssetImage("assets/images/makanan.jpeg"),
                               height: 200,
                               width: 200,
                             ),
@@ -188,7 +188,7 @@ class HomePage extends StatelessWidget {
                             ),
                             Image(
                               image: AssetImage(
-                                  "assets/imagess/beverages_icon.png"),
+                                  "assets/images/beverages_icon.png"),
                               height: 200,
                               width: 200,
                             ),
@@ -207,8 +207,7 @@ class HomePage extends StatelessWidget {
                         child: Row(
                           children: [
                             Image(
-                              image:
-                                  AssetImage("assets/imagess/snack_icon.png"),
+                              image: AssetImage("assets/images/snack_icon.png"),
                               height: 200,
                               width: 200,
                             ),
@@ -219,7 +218,7 @@ class HomePage extends StatelessWidget {
                                   fontSize: 14, fontWeight: FontWeight.bold),
                             ),
                             Image(
-                              image: AssetImage("assets/imagess/taco_icon.jpg"),
+                              image: AssetImage("assets/images/taco_icon.jpg"),
                               height: 200,
                               width: 200,
                             ),
