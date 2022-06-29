@@ -5,6 +5,7 @@ import 'package:restoran/register_view.dart';
 import 'package:restoran/theme.dart';
 import 'package:restoran/widgets/custom_checkbox.dart';
 import 'package:restoran/widgets/primary_button.dart';
+import 'package:restoran/menu_view.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -116,6 +117,21 @@ class _LoginPageState extends State<LoginPage> {
                   GestureDetector(
                     onTap: () {
                       Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => MenuPage()));
+                    },
+                    child: Text(
+                      'Menu',
+                      style: regular16pt.copyWith(color: primaryBlue),
+                    ),
+                  ),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => HomePage()));
                     },
                     child: Text(
@@ -124,6 +140,11 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                 ],
+              ),
+              CustomPrimaryButton(
+                buttonColor: primaryBlue,
+                textValue: 'Login ',
+                textColor: Colors.white,
               ),
               SizedBox(
                 height: 24,
