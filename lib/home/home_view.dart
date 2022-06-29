@@ -123,7 +123,7 @@ class HomePage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 30, left: 30),
                 child: Text(
-                  "Selected Promo",
+                  "Select Promo",
                   style: TextStyle(
                     fontSize: 19,
                     color: Colors.black87,
@@ -166,20 +166,63 @@ class HomePage extends StatelessWidget {
                       'Select Menu',
                       style: TextStyle(fontSize: 20, color: Colors.black),
                     ),
-                    Padding(
-                      padding: EdgeInsets.only(top: 20),
-                      child: Container(
-                        height: 300,
-                        child: GridView.count(
-                          crossAxisCount: 2,
-                          crossAxisSpacing: 12,
-                          mainAxisSpacing: 8,
-                          childAspectRatio: 1.30,
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                          left: 30,
+                          top: 30,
+                        ),
+                        child: Row(
                           children: [
-                            // _selectedExtras(),
-                            //_selectedExtras(),
-                            //_selectedExtras(),
-                            //_selectedExtras(),
+                            Image(
+                              image: AssetImage("assets/images/makanan.jpeg"),
+                              height: 200,
+                              width: 200,
+                            ),
+                            SizedBox(height: 10),
+                            Text(
+                              "                  ",
+                              style: TextStyle(
+                                  fontSize: 14, fontWeight: FontWeight.bold),
+                            ),
+                            Image(
+                              image: AssetImage(
+                                  "assets/images/beverages_icon.png"),
+                              height: 200,
+                              width: 200,
+                            ),
+                            SizedBox(height: 10),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                          left: 30,
+                          top: 30,
+                        ),
+                        child: Row(
+                          children: [
+                            Image(
+                              image: AssetImage("assets/images/snack_icon.png"),
+                              height: 200,
+                              width: 200,
+                            ),
+                            SizedBox(height: 10),
+                            Text(
+                              "                  ",
+                              style: TextStyle(
+                                  fontSize: 14, fontWeight: FontWeight.bold),
+                            ),
+                            Image(
+                              image: AssetImage("assets/images/taco_icon.jpg"),
+                              height: 200,
+                              width: 200,
+                            ),
+                            SizedBox(height: 10),
                           ],
                         ),
                       ),
